@@ -3,19 +3,19 @@
 	<head> 
 		<title>Tarea1</title>
 	</head>
-	<body>
+	<body style="background-color:orange;">
 		<h1>Sobre lo aprendido</h1>
-		<pre>Lo primero que hay que hacer es crear una cuenta en github y instalar git en tu computadora, git sera el respositorio en el que se guardaran los proyectos. 
-		A continuacion se creara un projecto en la pagina de git con licencia abierta.
-		Despues se debera copiar el link del proyecto.
-		Lo siguiente es abrir la terminal del ordenador y posicionarte donde se quiere crear la carpeta para el proyecto, por ejemplo si es el escritorio se ingresa a la terminal "cd Desktop"
-		A continuacion se escribe git clone y el link del proyecto git, esto creara una carpeta con los datos del git
-		En la carpeta se guardan los archivos del proyecto como este html
-		Una vez hecho esto se deben subir los cambios a github mediante el uso de la terminal y el comando git add
-		En cualquier momento se puede checar el status de la carpeta con el comando git status
-		Es recomendable despues de modificar el git añadir una bandera con la explicacion de la modificacion, esto se hace con el comando git commit -m "tu comentario"
+		<p>Lo primero que hay que hacer es crear una cuenta en github y<br> instalar git en tu computadora, git sera el respositorio en el que se guardaran los proyectos. <br>
+		A continuacion se creara un projecto en la pagina de git con licencia abierta.<br>
+		Despues se debera copiar el link del proyecto.<br>
+		Lo siguiente es abrir la terminal del ordenador y posicionarte donde se quiere crear la carpeta para el proyecto, por ejemplo <br>si es el escritorio se ingresa a la terminal "cd Desktop"<br>
+		A continuacion se escribe git clone y el link del proyecto git, esto creara una carpeta con los datos del git<br>
+		En la carpeta se guardan los archivos del proyecto como este html<br>
+		Una vez hecho esto se deben subir los cambios a github mediante el uso de la terminal y el comando git add . con el punto<br>
+		En cualquier momento se puede checar el status de la carpeta con el comando git status<br>
+		Es recomendable despues de modificar el git anadir una bandera con la explicacion de la modificacion, esto se hace con el comando git commit -m "tu comentario"<br>
 		El prceso se finaliza con el comando git push
-		 </pre>
+		 </p>
 		<h1>
 			H#: se utiliza para hacer un titulo
 		</h1>
@@ -25,10 +25,75 @@
 		parrafo sin que se modifique
 		su 
 		formato</pre>
+		<p>puedes hacer un salto de linea utilizando el comando br <br>
+		y seguir en el mismo parrafo</p>
 		<p>a href: sirve para insertar un texto con un hipervinculo, este es escrito despues del href entre comillas</p>
 		<a href="http://www.google.com">Hipervinculo a google</a>
 		<p>img src te sirve para insertar una imágen, en caso de que falle alt puede ser usado para mostrar un texto</p>
 		<img src="auto.png" alt="imagen no disponible">
+		<p>se puede cambiar el color de fondo con el atributo style="background-color:nombrecolor;" al lado de body<br>
+		en este caso se cambio a color naranja<br>
+		puedes cambiar el estilo de tu pagina siguiendo la siguiente sintaxis tagname style="property:value;"</p>
+		<h4 style="color:blue;">Por ejemplo hacer este titulo azul con color:blue </h4>
+		<h4 style="font-family:courier;">cambiar la fuente con font-family:courier</h4>
+		<h4 style="font-size:200%;">cambiar el tamano con font-size:200%</h4>
+		<h4 style="text-align:center;">Incluso alinear el texto como con text-align:center</h4>
+		<p>tambien se le puede aplicar formato al texto</p>
+		<b>"b" sirve para poner negritas<br></b>
+		<strong>"strong" es para darle enfasis a un texto, igual es negrita pero es con enfasis<br></strong>
+		<i>"i" sirve para darle formato en italicas<br></i>
+		<em>"em" es para darle enfasis al texto, tambien son italicas pero ahora con enfasis<br></em>
+		<h4>con "small" puedes hacer <small>pequeno</small> un texto <br></h4>
+		<h4>"mark" sirve para marcar un texto <mark>asi</mark> <br></h4>
+		<p>con "del" puedes tachar texto <del>blue</del> </p>
+		<p>"ins" sirve para insertar texto<ins>como este</ins><br></p>
+		<p>"sub" sirve para darle <sub>subindice</sub> al texto <br></p>
+		<p>"sup" sirve para darle <sup>superindice</sup> al texto <br></p>
+		<p>"q" me sirve para hacer frases como<q>yo dije esto</q> y solo pone las comillas</p>
+		<p>tambien puedes hacer quotes con "blockquote cite:url"</p>
+		<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			For 50 years, WWF has been protecting the future of nature.
+			The world's leading conservation organization,
+			WWF works in 100 countries and is supported by
+			1.2 million members in the United States and
+			close to 5 million globally.
+		</blockquote>
+		<p>"abbr title="titulo largo" sirve para hacer acronimos de titulos largos, este metodo es util para los buscadores <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+		<p>"adress" sirve para poner una direccion como por ejemplo <br></p>
+		<address>
+			Written by John Doe.<br> 
+			Visit us at:<br>
+			Example.com<br>
+			Box 564, Disneyland<br>
+			USA
+		</address>
+		<p>"cite" define el titulo del trabajo, por ejemplo</p>
+		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+		<p>"bdo dir="rtl" es un bi-directional override y muestra el texto al reves, por ejemplo</p>
+		<bdo dir="rtl">este texto estara escrito al reves</bdo>
+		<p>"kbd" es keyboard output, por ejemplo</p>
+		<kbd>File | Open...</kbd>
+		<p>"samp" define un sample output de un programa de computadora</p>
+		<samp>
+		demo.example.com login: Apr 12 09:10:17
+		Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+		</samp>
+		<p>"code" define piezas de codigos de programacion y para que conserve el formato se inserta dentro de un "pre"</p>
+		<pre><code>
+		var x = 5;
+		var y = 6;
+		document.getElementById("demo").innerHTML = x + y;
+		</code></pre>
+		<p>"var" es para definir una variable como por ejemplo emc</p>
+		<p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
+		<p>se pueden agregar comentarios a html con la sintaxis "!-- Write your comments here -- pero entre flechas<br>
+		los comentarios no se ven, y sirven para anotaciones importantes o pueden ser usados para buscar un error en el codigo<br></p>
+		<!-- este es un comment -->
+		<p>tambien existen comentarios condicionales que sirven para ejecutar tags en html y solo sirven en internet explorer </p>
+		<p>tambien se pueden usar colores en html usando su nombre, su valor RGB o su valor HEX</p>
+
+
+
 
 	</body>
 
