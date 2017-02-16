@@ -2,8 +2,9 @@
 <html>
 	<head> 
 		<title>Tarea1</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
-	<body style="background-color:orange;">
+	<body>
 		<h1>Sobre lo aprendido</h1>
 		<p>Lo primero que hay que hacer es crear una cuenta en github y<br> instalar git en tu computadora, git sera el respositorio en el que se guardaran los proyectos. <br>
 		A continuacion se creara un projecto en la pagina de git con licencia abierta.<br>
@@ -34,10 +35,10 @@
 		<p>se puede cambiar el color de fondo con el atributo style="background-color:nombrecolor;" al lado de body<br>
 		en este caso se cambio a color naranja<br>
 		puedes cambiar el estilo de tu pagina siguiendo la siguiente sintaxis tagname style="property:value;"</p>
-		<h4 style="color:blue;">Por ejemplo hacer este titulo azul con color:blue </h4>
-		<h4 style="font-family:courier;">cambiar la fuente con font-family:courier</h4>
-		<h4 style="font-size:200%;">cambiar el tamano con font-size:200%</h4>
-		<h4 style="text-align:center;">Incluso alinear el texto como con text-align:center</h4>
+		<h4 id="h4Azul">Por ejemplo hacer este titulo azul con color:blue </h4>
+		<h4 id="h4FontFamily">cambiar la fuente con font-family:courier</h4>
+		<h4 >cambiar el tamano con font-size:200%</h4>
+		<h4 >Incluso alinear el texto como con text-align:center</h4>
 		<p>tambien se le puede aplicar formato al texto</p>
 		<b>"b" sirve para poner negritas<br></b>
 		<strong>"strong" es para darle enfasis a un texto, igual es negrita pero es con enfasis<br></strong>
@@ -90,8 +91,55 @@
 		los comentarios no se ven, y sirven para anotaciones importantes o pueden ser usados para buscar un error en el codigo<br></p>
 		<!-- este es un comment -->
 		<p>tambien existen comentarios condicionales que sirven para ejecutar tags en html y solo sirven en internet explorer </p>
-		<p>tambien se pueden usar colores en html usando su nombre, su valor RGB o su valor HEX</p>
+		<p>tambien se pueden usar colores en html usando su nombre, su valor RGB o su valor HEX<br>
+		el color </p>
+		<p>los colores por nombre son 140, los colores RGB red green blue se escriben especificando que cantidad de cada color se necesita variando cada color del 0 al 240, para usar distintos tipos de gris se debe igualar el valor de los 3 colores y su intesidad depende de su magnitud, hex se define de la misma manera RRGGBB variando desde el 00 hasta el FF como valor maximo</p>
+		<p>CSS (Cascading style sheet) se usa en HTML para controlar la visualizacion de la pagina<br> su tipo esta dividido en 3 <br> inline: que se usa cuando escribes el css como un atributo de un solo elemento de html por ejemplo <br> h1 style="color:blue;">Esto es color azul debido al css/h1</p>
+		<p>interno: cuando defines los atributos de diferentes elementos al mismo tiempo poniendo el css dentro del head, poniendo un style dentro de este<br> por ejemplo style
+		body {background-color: powderblue;}
+		h1   {color: blue;}
+		p    {color: red;}
+		/style</p>
+		<p>para definir un link usamos el elemento a<br> a ese elemento le podemos poner el atributo href="" <br>  el atributo te puede enviar a una pagina externa o una parte dentro de la pagina</p>
+		<p>puedes definir el estilo de un link en el elemento head en el elemento style<br> por ejemplo asi a:link {
+		    color: green;<br>
+		    background-color: transparent;<br>
+		    text-decoration: none;<br>
+		}<br>
+		a:visited {<br>
+		    color: pink;<br>
+		    background-color: transparent;<br>
+		    text-decoration: none;<br>
+		}<br>
+		a:hover {<br>
+		    color: red;<br>
+		    background-color: transparent;<br>
+		    text-decoration: underline;<br>
+		}<br>
+		a:active {<br>
+		    color: yellow;<br>
+		    background-color: transparent;<br>
+		    text-decoration: underline;
+		}</p>
+		<p>a a le puedes poner el atributo target que define como se comportara tu link</p>
+		<pre>The target attribute can have one of the following values:
 
+		_blank - Opens the linked document in a new window or tab
+
+		_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+
+		_parent - Opens the linked document in the parent frame
+
+		_top - Opens the linked document in the full body of the window
+		framename - Opens the linked document in a named frame
+		</pre>
+		<p>puedes poner como direccion del href un id de algo en la misma pagina bookmark<br>ademas puedes meter un elemento img dentro del elemento a para poner un link en una imagen</p>
+		<pre>por ejemplo a href="default.asp"
+		  img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"
+		/a</pre>
+		<pre>para usar imagenes se usa la siguiente sintaxis img src="url" alt="some_text" style="width:width;height:height;"
+		ademas las imagenes son elementos que no se cierran con /</pre>
+		
 
 
 
