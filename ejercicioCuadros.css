@@ -1,0 +1,38 @@
+div.c1 {
+width:20%;
+padding-top:20%;
+background-color: red;
+float:left;
+
+}
+div.c2 {
+width:20%;
+padding-top:20%;
+background-color: orange;
+float:left;
+margin-top: 20px;
+}
+div.c3 {
+width:20%;
+padding-top:20%;
+background-color: pink;
+float:left;
+margin-top: 40px;
+
+}
+div.c4 {
+width:20%;
+padding-top:20%;
+background-color: orange;
+float:left;
+margin-top: 60px;
+
+}
+div.c5 {
+width:20%;
+padding-top:20%;
+background-color: red;
+float:left;
+margin-top: 80px;
+
+}

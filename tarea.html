@@ -1,147 +1,113 @@
 <!DOCTYPE html>
 <html>
 	<head> 
+		<meta charset="UTF-8">
+		<meta name="author" content="Juan Hernandez">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tarea1</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<h1>Sobre lo aprendido</h1>
-		<p>Lo primero que hay que hacer es crear una cuenta en github y<br> instalar git en tu computadora, git sera el respositorio en el que se guardaran los proyectos. <br>
-		A continuacion se creara un projecto en la pagina de git con licencia abierta.<br>
-		Despues se debera copiar el link del proyecto.<br>
-		Lo siguiente es abrir la terminal del ordenador y posicionarte donde se quiere crear la carpeta para el proyecto, por ejemplo <br>si es el escritorio se ingresa a la terminal "cd Desktop"<br>
-		A continuacion se escribe git clone y el link del proyecto git, esto creara una carpeta con los datos del git<br>
-		En la carpeta se guardan los archivos del proyecto como este html<br>
-		Una vez hecho esto se deben subir los cambios a github mediante el uso de la terminal y el comando git add . con el punto<br>
-		En cualquier momento se puede checar el status de la carpeta con el comando git status<br>
-		Es recomendable despues de modificar el git anadir una bandera con la explicacion de la modificacion, esto se hace con el comando git commit -m "tu comentario"<br>
-		El prceso se finaliza con el comando git push
-		 </p>
-		<h1>
-			H#: se utiliza para hacer un titulo
-		</h1>
-		<h2>Dependiendo del numero se asigna un tamano siendo el 1 el mayor (este es un h2)</h2>
-		<p>p: se utiliza para insertar un parrafo</p>
-		<pre>pre: se utiliza para insertar un
-		parrafo sin que se modifique
-		su 
-		formato</pre>
-		<p>puedes hacer un salto de linea utilizando el comando br <br>
-		y seguir en el mismo parrafo</p>
-		<p>a href: sirve para insertar un texto con un hipervinculo, este es escrito despues del href entre comillas</p>
-		<a href="http://www.google.com">Hipervinculo a google</a>
-		<p>img src te sirve para insertar una imágen, en caso de que falle alt puede ser usado para mostrar un texto</p>
-		<img src="auto.png" alt="imagen no disponible">
-		<p>se puede cambiar el color de fondo con el atributo style="background-color:nombrecolor;" al lado de body<br>
-		en este caso se cambio a color naranja<br>
-		puedes cambiar el estilo de tu pagina siguiendo la siguiente sintaxis tagname style="property:value;"</p>
-		<h4 id="h4Azul">Por ejemplo hacer este titulo azul con color:blue </h4>
-		<h4 id="h4FontFamily">cambiar la fuente con font-family:courier</h4>
-		<h4 >cambiar el tamano con font-size:200%</h4>
-		<h4 >Incluso alinear el texto como con text-align:center</h4>
-		<p>tambien se le puede aplicar formato al texto</p>
-		<b>"b" sirve para poner negritas<br></b>
-		<strong>"strong" es para darle enfasis a un texto, igual es negrita pero es con enfasis<br></strong>
-		<i>"i" sirve para darle formato en italicas<br></i>
-		<em>"em" es para darle enfasis al texto, tambien son italicas pero ahora con enfasis<br></em>
-		<h4>con "small" puedes hacer <small>pequeno</small> un texto <br></h4>
-		<h4>"mark" sirve para marcar un texto <mark>asi</mark> <br></h4>
-		<p>con "del" puedes tachar texto <del>blue</del> </p>
-		<p>"ins" sirve para insertar texto<ins>como este</ins><br></p>
-		<p>"sub" sirve para darle <sub>subindice</sub> al texto <br></p>
-		<p>"sup" sirve para darle <sup>superindice</sup> al texto <br></p>
-		<p>"q" me sirve para hacer frases como<q>yo dije esto</q> y solo pone las comillas</p>
-		<p>tambien puedes hacer quotes con "blockquote cite:url"</p>
-		<blockquote cite="http://www.worldwildlife.org/who/index.html">
-			For 50 years, WWF has been protecting the future of nature.
-			The world's leading conservation organization,
-			WWF works in 100 countries and is supported by
-			1.2 million members in the United States and
-			close to 5 million globally.
-		</blockquote>
-		<p>"abbr title="titulo largo" sirve para hacer acronimos de titulos largos, este metodo es util para los buscadores <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-		<p>"adress" sirve para poner una direccion como por ejemplo <br></p>
-		<address>
-			Written by John Doe.<br> 
-			Visit us at:<br>
-			Example.com<br>
-			Box 564, Disneyland<br>
-			USA
-		</address>
-		<p>"cite" define el titulo del trabajo, por ejemplo</p>
-		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-		<p>"bdo dir="rtl" es un bi-directional override y muestra el texto al reves, por ejemplo</p>
-		<bdo dir="rtl">este texto estara escrito al reves</bdo>
-		<p>"kbd" es keyboard output, por ejemplo</p>
-		<kbd>File | Open...</kbd>
-		<p>"samp" define un sample output de un programa de computadora</p>
-		<samp>
-		demo.example.com login: Apr 12 09:10:17
-		Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
-		</samp>
-		<p>"code" define piezas de codigos de programacion y para que conserve el formato se inserta dentro de un "pre"</p>
-		<pre><code>
-		var x = 5;
-		var y = 6;
-		document.getElementById("demo").innerHTML = x + y;
-		</code></pre>
-		<p>"var" es para definir una variable como por ejemplo emc</p>
-		<p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
-		<p>se pueden agregar comentarios a html con la sintaxis "!-- Write your comments here -- pero entre flechas<br>
-		los comentarios no se ven, y sirven para anotaciones importantes o pueden ser usados para buscar un error en el codigo<br></p>
-		<!-- este es un comment -->
-		<p>tambien existen comentarios condicionales que sirven para ejecutar tags en html y solo sirven en internet explorer </p>
-		<p>tambien se pueden usar colores en html usando su nombre, su valor RGB o su valor HEX<br>
-		el color </p>
-		<p>los colores por nombre son 140, los colores RGB red green blue se escriben especificando que cantidad de cada color se necesita variando cada color del 0 al 240, para usar distintos tipos de gris se debe igualar el valor de los 3 colores y su intesidad depende de su magnitud, hex se define de la misma manera RRGGBB variando desde el 00 hasta el FF como valor maximo</p>
-		<p>CSS (Cascading style sheet) se usa en HTML para controlar la visualizacion de la pagina<br> su tipo esta dividido en 3 <br> inline: que se usa cuando escribes el css como un atributo de un solo elemento de html por ejemplo <br> h1 style="color:blue;">Esto es color azul debido al css/h1</p>
-		<p>interno: cuando defines los atributos de diferentes elementos al mismo tiempo poniendo el css dentro del head, poniendo un style dentro de este<br> por ejemplo style
-		body {background-color: powderblue;}
-		h1   {color: blue;}
-		p    {color: red;}
-		/style</p>
-		<p>para definir un link usamos el elemento a<br> a ese elemento le podemos poner el atributo href="" <br>  el atributo te puede enviar a una pagina externa o una parte dentro de la pagina</p>
-		<p>puedes definir el estilo de un link en el elemento head en el elemento style<br> por ejemplo asi a:link {
-		    color: green;<br>
-		    background-color: transparent;<br>
-		    text-decoration: none;<br>
-		}<br>
-		a:visited {<br>
-		    color: pink;<br>
-		    background-color: transparent;<br>
-		    text-decoration: none;<br>
-		}<br>
-		a:hover {<br>
-		    color: red;<br>
-		    background-color: transparent;<br>
-		    text-decoration: underline;<br>
-		}<br>
-		a:active {<br>
-		    color: yellow;<br>
-		    background-color: transparent;<br>
-		    text-decoration: underline;
-		}</p>
-		<p>a a le puedes poner el atributo target que define como se comportara tu link</p>
-		<pre>The target attribute can have one of the following values:
+	<div class="header">
+		<h1 style="text-align: center;">Desarrollo Web</h1>
+	</div>
+	
 
-		_blank - Opens the linked document in a new window or tab
+		<div class="menu">
+			<ul>
+				<li><a href="#Introduccion">Introduccion</a></li>
+				<li><a href="#HTML">HTML</a></li>
+				<ul>
+					<li><a href="#html1">HTML 1</a></li>
+					<li><a href="#html2">HTML 2</a></li>
+					<li><a href="#html3">HTML 3</a></li>
+				</ul>
+				<li><a href="#CSS">CSS</a></li>
+				<ul>
+					<li><a href="#CSS1">CSS 1</a></li>
+					<li><a href="#CSS2">CSS 2</a></li>
+					<li><a href="#CSS3">CSS 3</a></li>
+				</ul>
+				<li><a href="#Javascript">Javascript</a></li>
+				<ul>
+					<li><a href="#js1">Javascript 1</a></li>
+					<li><a href="#js2">Javascript 2</a></li>
+					<li><a href="#js3">Javascript 3</a></li>
+				</ul>
+			</ul>
+		</div>
+	
+	<div class="content">
+		<article>
+		<h1 id="Introduccion">Introduccion</h1>
 
-		_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra maximus luctus. Integer eget ipsum eu mi mollis mollis dignissim a nisl. Vestibulum euismod ante a placerat porta. In at eleifend ex, sed condimentum neque. Curabitur venenatis feugiat ipsum, pharetra varius magna vehicula vel. Curabitur vel vulputate lectus, in aliquam tellus. Integer vehicula porta tellus nec aliquam. Aliquam sed erat mi. Curabitur elit nisl, porttitor quis commodo sit amet, tincidunt at nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-		_parent - Opens the linked document in the parent frame
+Aliquam ultrices consectetur quam et imperdiet. Quisque aliquet neque in tellus semper, eu porttitor est maximus. Fusce vel ornare leo. Donec sed nisl posuere, rhoncus magna at, elementum libero. Fusce sed felis vitae ligula auctor tincidunt. Etiam fringilla erat purus, id congue risus finibus at. In posuere eros quis rhoncus condimentum. Nulla facilisi. Fusce dolor felis, pharetra iaculis urna non, posuere maximus lectus. Etiam vulputate, quam et pellentesque hendrerit, odio turpis laoreet urna, eu varius urna turpis non purus. Donec lacus elit, pharetra nec ultrices quis, tristique non est. Quisque vestibulum dui lacus, in dapibus dolor vulputate ut. Nunc semper lorem elit. Nulla sit amet ligula id turpis vehicula varius. Suspendisse laoreet orci ipsum, vel pharetra elit rhoncus vel. Sed accumsan odio a neque hendrerit egestas.
 
-		_top - Opens the linked document in the full body of the window
-		framename - Opens the linked document in a named frame
-		</pre>
-		<p>puedes poner como direccion del href un id de algo en la misma pagina bookmark<br>ademas puedes meter un elemento img dentro del elemento a para poner un link en una imagen</p>
-		<pre>por ejemplo a href="default.asp"
-		  img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"
-		/a</pre>
-		<pre>para usar imagenes se usa la siguiente sintaxis img src="url" alt="some_text" style="width:width;height:height;"
-		ademas las imagenes son elementos que no se cierran con /</pre>
-		
+Nunc eget venenatis lacus. Etiam convallis lectus tortor, vulputate volutpat nibh elementum id. Donec non tempus arcu. Nulla eget dui arcu. Ut accumsan mattis risus in ultricies. Cras condimentum nunc nec bibendum hendrerit. Cras hendrerit sodales turpis, quis rhoncus libero blandit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Nunc leo sapien, varius ut auctor at, ornare non mi. Aliquam nulla ex, sagittis ac iaculis ut, imperdiet a neque. Duis scelerisque, ex lacinia ultrices tempus, metus nulla vulputate lorem, sit amet rhoncus nisi dolor vel neque. Sed nisi neque, scelerisque ac lectus eget, auctor aliquam justo. Praesent nec pharetra eros. Mauris ac lorem quam. In vulputate mi nisl, malesuada pretium dui pellentesque vel. Curabitur sodales ligula viverra lacinia posuere. Donec sit amet augue ac erat aliquet maximus. Nulla semper pulvinar ante, et facilisis dolor accumsan sit amet. Mauris imperdiet semper convallis. Nulla blandit mattis sagittis. In condimentum ac sapien at imperdiet. Suspendisse tempus pretium leo sed facilisis. Pellentesque rutrum lacus nibh, et commodo mauris placerat at.
+
+Donec vel finibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ultricies risus eu dignissim. Curabitur ullamcorper tincidunt enim, at sagittis mauris lacinia eu. Curabitur blandit lacinia lectus, nec mattis sapien luctus ut. Vivamus sit amet cursus enim, in varius tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam ac nibh porta ultricies eu nec dui.</p>
+		<h1 id="HTML">HTML</h1>
+
+<p>HTML significa hyper text markup language y es utilizado para darle estructura a las paginas web.
+HTML se guarda .html y la primera linea que se debe poner al usar este codigo es: !DOCTYPE html seguido de html y /html, dentro de esto se debera escribir el codigo</p>
+<h4>Elementos y atributos</h4>
+
+<p>En html existen elementos y atributos. Los elementos estan envueltos en signos de mayor o menor y generalmente tienen un elemento que abre y otro que cierra (tagname-contenido-/tagname). Los elementos definen la accion que debe hacer el navegador. Un elemento de html puede estar dentro de otro, por ejemplo dentro del html va el body y dentro el parrafo.</p>
+<p>No todos los elemetos llevan endtag pero no ponerlo puede ocasionar errores, ademas es recomendable escribir siempre en minusculas.</p>
+<p>Todos los elementos de HTML pueden tener atributos, estos proveen informacion extra sobre el elemento que acompañan. Los atributos deben ser escritos junto con la start tag y respecto a su sintaxis generalmente es name="value".</p>
+
+<h3 id="html1">HTML 1</h2>
+
+<p>Aliquam ultrices consectetur quam et imperdiet. Quisque aliquet neque in tellus semper, eu porttitor est maximus. Fusce vel ornare leo. Donec sed nisl posuere, rhoncus magna at, elementum libero. Fusce sed felis vitae ligula auctor tincidunt. Etiam fringilla erat purus, id congue risus finibus at. In posuere eros quis rhoncus condimentum. Nulla facilisi. Fusce dolor felis, pharetra iaculis urna non, posuere maximus lectus. Etiam vulputate, quam et pellentesque hendrerit, odio turpis laoreet urna, eu varius urna turpis non purus. Donec lacus elit, pharetra nec ultrices quis, tristique non est. Quisque vestibulum dui lacus, in dapibus dolor vulputate ut. Nunc semper lorem elit. Nulla sit amet ligula id turpis vehicula varius. Suspendisse laoreet orci ipsum, vel pharetra elit rhoncus vel. Sed accumsan odio a neque hendrerit egestas.</p>
+
+<h3 id="html2">HTML 2</h2>
+
+<p>Nunc eget venenatis lacus. Etiam convallis lectus tortor, vulputate volutpat nibh elementum id. Donec non tempus arcu. Nulla eget dui arcu. Ut accumsan mattis risus in ultricies. Cras condimentum nunc nec bibendum hendrerit. Cras hendrerit sodales turpis, quis rhoncus libero blandit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Nunc leo sapien, varius ut auctor at, ornare non mi. Aliquam nulla ex, sagittis ac iaculis ut, imperdiet a neque. Duis scelerisque, ex lacinia ultrices tempus, metus nulla vulputate lorem, sit amet rhoncus nisi dolor vel neque. Sed nisi neque, scelerisque ac lectus eget, auctor aliquam justo. Praesent nec pharetra eros. Mauris ac lorem quam. In vulputate mi nisl, malesuada pretium dui pellentesque vel. Curabitur sodales ligula viverra lacinia posuere. Donec sit amet augue ac erat aliquet maximus. Nulla semper pulvinar ante, et facilisis dolor accumsan sit amet. Mauris imperdiet semper convallis. Nulla blandit mattis sagittis. In condimentum ac sapien at imperdiet. Suspendisse tempus pretium leo sed facilisis. Pellentesque rutrum lacus nibh, et commodo mauris placerat at.</p>
+<h3 id="html3">HTML 3</h2>
+<p>Donec vel finibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ultricies risus eu dignissim. Curabitur ullamcorper tincidunt enim, at sagittis mauris lacinia eu. Curabitur blandit lacinia lectus, nec mattis sapien luctus ut. Vivamus sit amet cursus enim, in varius tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam ac nibh porta ultricies eu nec dui.</p>
+	
+	
+	
 
 
+
+		<h1 id="CSS">CSS</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra maximus luctus. Integer eget ipsum eu mi mollis mollis dignissim a nisl. Vestibulum euismod ante a placerat porta. In at eleifend ex, sed condimentum neque. Curabitur venenatis feugiat ipsum, pharetra varius magna vehicula vel. Curabitur vel vulputate lectus, in aliquam tellus. Integer vehicula porta tellus nec aliquam. Aliquam sed erat mi. Curabitur elit nisl, porttitor quis commodo sit amet, tincidunt at nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<h3 id="CSS1">CSS 1</h2>
+<p>Aliquam ultrices consectetur quam et imperdiet. Quisque aliquet neque in tellus semper, eu porttitor est maximus. Fusce vel ornare leo. Donec sed nisl posuere, rhoncus magna at, elementum libero. Fusce sed felis vitae ligula auctor tincidunt. Etiam fringilla erat purus, id congue risus finibus at. In posuere eros quis rhoncus condimentum. Nulla facilisi. Fusce dolor felis, pharetra iaculis urna non, posuere maximus lectus. Etiam vulputate, quam et pellentesque hendrerit, odio turpis laoreet urna, eu varius urna turpis non purus. Donec lacus elit, pharetra nec ultrices quis, tristique non est. Quisque vestibulum dui lacus, in dapibus dolor vulputate ut. Nunc semper lorem elit. Nulla sit amet ligula id turpis vehicula varius. Suspendisse laoreet orci ipsum, vel pharetra elit rhoncus vel. Sed accumsan odio a neque hendrerit egestas.</p>
+<h3 id="CSS2">CSS 2</h2>
+<p>Nunc eget venenatis lacus. Etiam convallis lectus tortor, vulputate volutpat nibh elementum id. Donec non tempus arcu. Nulla eget dui arcu. Ut accumsan mattis risus in ultricies. Cras condimentum nunc nec bibendum hendrerit. Cras hendrerit sodales turpis, quis rhoncus libero blandit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3 id="CSS3">CSS 3</h3>
+<p>Nunc leo sapien, varius ut auctor at, ornare non mi. Aliquam nulla ex, sagittis ac iaculis ut, imperdiet a neque. Duis scelerisque, ex lacinia ultrices tempus, metus nulla vulputate lorem, sit amet rhoncus nisi dolor vel neque. Sed nisi neque, scelerisque ac lectus eget, auctor aliquam justo. Praesent nec pharetra eros. Mauris ac lorem quam. In vulputate mi nisl, malesuada pretium dui pellentesque vel. Curabitur sodales ligula viverra lacinia posuere. Donec sit amet augue ac erat aliquet maximus. Nulla semper pulvinar ante, et facilisis dolor accumsan sit amet. Mauris imperdiet semper convallis. Nulla blandit mattis sagittis. In condimentum ac sapien at imperdiet. Suspendisse tempus pretium leo sed facilisis. Pellentesque rutrum lacus nibh, et commodo mauris placerat at.
+
+Donec vel finibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ultricies risus eu dignissim. Curabitur ullamcorper tincidunt enim, at sagittis mauris lacinia eu. Curabitur blandit lacinia lectus, nec mattis sapien luctus ut. Vivamus sit amet cursus enim, in varius tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam ac nibh porta ultricies eu nec dui.</p>
+
+		<h1 id="Javascript">Javascript</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra maximus luctus. Integer eget ipsum eu mi mollis mollis dignissim a nisl. Vestibulum euismod ante a placerat porta. In at eleifend ex, sed condimentum neque. Curabitur venenatis feugiat ipsum, pharetra varius magna vehicula vel. Curabitur vel vulputate lectus, in aliquam tellus. Integer vehicula porta tellus nec aliquam. Aliquam sed erat mi. Curabitur elit nisl, porttitor quis commodo sit amet, tincidunt at nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<h3 id="js1">Javascript 1</h2>
+<p>Aliquam ultrices consectetur quam et imperdiet. Quisque aliquet neque in tellus semper, eu porttitor est maximus. Fusce vel ornare leo. Donec sed nisl posuere, rhoncus magna at, elementum libero. Fusce sed felis vitae ligula auctor tincidunt. Etiam fringilla erat purus, id congue risus finibus at. In posuere eros quis rhoncus condimentum. Nulla facilisi. Fusce dolor felis, pharetra iaculis urna non, posuere maximus lectus. Etiam vulputate, quam et pellentesque hendrerit, odio turpis laoreet urna, eu varius urna turpis non purus. Donec lacus elit, pharetra nec ultrices quis, tristique non est. Quisque vestibulum dui lacus, in dapibus dolor vulputate ut. Nunc semper lorem elit. Nulla sit amet ligula id turpis vehicula varius. Suspendisse laoreet orci ipsum, vel pharetra elit rhoncus vel. Sed accumsan odio a neque hendrerit egestas.
+
+Nunc eget venenatis lacus. Etiam convallis lectus tortor, vulputate volutpat nibh elementum id. Donec non tempus arcu. Nulla eget dui arcu. Ut accumsan mattis risus in ultricies. Cras condimentum nunc nec bibendum hendrerit. Cras hendrerit sodales turpis, quis rhoncus libero blandit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3 id="js2">Javascript 2</h2>
+<p>Nunc leo sapien, varius ut auctor at, ornare non mi. Aliquam nulla ex, sagittis ac iaculis ut, imperdiet a neque. Duis scelerisque, ex lacinia ultrices tempus, metus nulla vulputate lorem, sit amet rhoncus nisi dolor vel neque. Sed nisi neque, scelerisque ac lectus eget, auctor aliquam justo. Praesent nec pharetra eros. Mauris ac lorem quam. In vulputate mi nisl, malesuada pretium dui pellentesque vel. Curabitur sodales ligula viverra lacinia posuere. Donec sit amet augue ac erat aliquet maximus. Nulla semper pulvinar ante, et facilisis dolor accumsan sit amet. Mauris imperdiet semper convallis. Nulla blandit mattis sagittis. In condimentum ac sapien at imperdiet. Suspendisse tempus pretium leo sed facilisis. Pellentesque rutrum lacus nibh, et commodo mauris placerat at.</p>
+<h3 id="js3">Javascript 3</h2>
+<p>Donec vel finibus odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ultricies risus eu dignissim. Curabitur ullamcorper tincidunt enim, at sagittis mauris lacinia eu. Curabitur blandit lacinia lectus, nec mattis sapien luctus ut. Vivamus sit amet cursus enim, in varius tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam ac nibh porta ultricies eu nec dui.</p>
+</article>
+	</div>
+	<div class="footer">
+		<p>a</p>
+
+	</div>
+
+	
 
 	</body>
 

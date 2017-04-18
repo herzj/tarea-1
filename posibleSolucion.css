@@ -1,0 +1,93 @@
+body{
+	margin:0;
+	padding: 0;
+}
+div.cuadroSuperior {
+	background-color: blue;
+	width:100%;
+	height:50%;
+	position:absolute;
+	top:0;
+}
+div.cuadroInferior {
+	background-color: blue;
+	width:100%;
+	height:50%;
+	position: absolute;
+	bottom:0;
+}
+div.grande1{
+	
+	margin:auto;
+	background-color: red;
+	position:absolute;
+	left:10%;
+	top:17%;
+	padding-top: 17%;
+	width:17%;
+	
+}
+div.mediano1{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width: 14%;
+	padding-top: 14%;
+	left:37%;
+	top:21%;
+
+}
+div.chico1{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width:11%;
+	padding-top: 11%;
+	left:61%;
+	top:26%;
+}
+div.muyChico1{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width:8%;
+	padding-top:8%;
+	left:82%;
+	top:32%;
+}
+div.grande2{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	padding-top: 17%;
+	width:17%;
+	top:17%;
+	right:10%;
+}
+div.mediano2{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width: 14%;
+	padding-top: 14%;
+	top:21%;
+	right:37%;
+}
+div.chico2{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width:11%;
+	padding-top: 11%;
+	top:26%;
+	right:61%;
+}
+div.muyChico2{
+	margin: auto;
+	background-color: red;
+	position:absolute;
+	width:8%;
+	padding-top:8%;
+	top:32%;
+	right:82%;
+}
